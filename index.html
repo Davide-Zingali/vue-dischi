@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <title>Dischi Musicali</title>
+</head>
+<body>
+    <!-- contenitore vue -->
+    <div id="root">
+        <header></header>
+        <div id="container">
+            <div class="album" v-for='item, indice in 10'>
+                <div class="img">
+                    <img :src="array[indice].poster" alt="">
+                </div>
+                <h2>{{array[indice].title}}</h2>
+                <h4>{{array[indice].author}}</h4>
+                <h4>{{array[indice].year}}</h4>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

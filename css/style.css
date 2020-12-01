@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+h4 {
+    color: gray;
+}
+#root {
+    background-color: #1E2D3B;
+}
+header {
+    height: 50px;
+    background-color: #2E3A46;
+    margin-bottom: 60px;
+}
+#container {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.album {
+    padding: 15px;
+    width: calc(100% / 4);
+    text-align: center;
+}
+.img > img {
+    width: 100%;
+}
