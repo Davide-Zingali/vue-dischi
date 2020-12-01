@@ -9,14 +9,15 @@ h4 {
 }
 #root {
     background-color: #1E2D3B;
+    min-height: 100vh;
 }
 header {
     height: 50px;
     background-color: #2E3A46;
-    margin-bottom: 60px;
 }
 #container {
     margin: 0 auto;
+    padding: 50px 0;
     width: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +26,9 @@ header {
     padding: 15px;
     width: calc(100% / 4);
     text-align: center;
+}
+.img{
+    height: 200px;
 }
 .img > img {
     width: 100%;

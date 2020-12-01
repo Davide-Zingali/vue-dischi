@@ -14,32 +14,14 @@ var app = new Vue({
     },
     mounted: function () {
         for (let i = 0; i < 10; i++) {
-            this.array.push({})
-            
             axios.get(linkDischi)
             .then(risposta => {
                 var rootDischi = risposta.data.response;
-                var rootDisco = rootDischi[i]
-                console.log(i, '* root disco', rootDisco);
-
-                this.$set(this.array, i, rootDisco)
+                this.array = rootDischi; //assegno l'array di oggetti direttamente al mio array nel data
             });
-            
         }
-        console.log(this.array);
-
     }
-
 })
-
-
-
-
-
-
-
-
-
 
 
 
